@@ -1,0 +1,65 @@
+/* 주석 찾기*/
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.wrapper {
+	width: 800px;
+	margin: 100px auto;}
+/* wrapper로 공간을 만들어주고 */
+
+.sq {
+	background-color: #111;
+	color: white;
+	padding: 1rem;
+}
+
+.sq-item {
+	float: left;
+	width: 25%;
+	padding-top: 25%;
+	position: relative;}
+/* 10개를 만든 후 공간안에 왼쪽으로 정렬 후 
+large, long, wide를 따로 지정해 크기를 조정하였고*/
+.sq-item-large {
+	width: 50%;
+	padding-top: 50%}
+.sq-item-long {
+	padding-top: 75%;
+	float: right;}
+.sq-item-wide {
+	width: 50%;}
+
+.sq-item-anchor {
+	background-color: orange;
+	position: absolute;
+	left: 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 1rem;
+	padding: 1rem;
+	overflow: hidden;
+	transition: all .3s; /* 모든(all) 애니메이션을 0.3초동안 작동 */
+	border: 0 solid white;}
+.sq-item-anchor:hover { /* 이벤트*/
+	margin: -1rem; /* -로 하면 커진다.*/
+/*mark up은 최근에 작업한게 맨 위로 올라가게 되어있어 
+겹쳐질 수 있어 hover했을때 z-index 값을 바꿔서 마우스 올려져있는게 맨 위로 올라옵니다.*/
+	z-index: 30;
+	border: 10px solid white; /*이벤트 발생시 배경 테두리*/}
+.sq-item-anchor-title {
+	position: relative;
+	/* 겹치는 콘텐츠나 디스플레이에 먼저 보여 줄 우선순위를 설정해 보여주는 기능 */
+	z-index: 20;
+}
+
+.sq-item-anchor-cover {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 10;
+}

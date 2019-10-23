@@ -1,0 +1,6 @@
+
+.visual { position: relative; padding: 0 50px;}
+.visual .con > div { height: 640px;}
+.visual .con .slide { background: url(stua.jpg) no-repeat center; color: #fff; font-size: 32px; line-height: 46px;}
+.visual .con .slide p { padding: 19px 0 0; font-size: 20px; line-height: 100%;}
+.visual .con .slide .txt { position: absolute; left: 50%; top: 175px;}

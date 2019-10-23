@@ -1,0 +1,4 @@
+/*minfo.html 적용 스타일 */
+#year-table {table-layout: auto; width: 80%; border-collapse: seperate;}
+#year-table thead { background: #E4F2D0; }
+#logo {position: fixed; top: 130px; left: 70px; opacity: 0.3;}
